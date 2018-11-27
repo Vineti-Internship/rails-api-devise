@@ -11,9 +11,6 @@ module V1
     end
 
     def destroy
-      @user = User.find(params[:id])
-      @user.authentication_token = nil
-      render json: status: :created
     end
   end
 end
